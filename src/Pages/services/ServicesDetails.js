@@ -2,7 +2,7 @@ import React from "react"
 import {useParams} from "react-router-dom"
 import servicesData from "./ServicesData"
 
-function ServiceDetail(props) {
+function ServicesDetail(props) {
     const {serviceId} = useParams()
     // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
     const thisService = servicesData.find(service => service._id === serviceId)
@@ -16,4 +16,4 @@ function ServiceDetail(props) {
     )
 }
 
-export default ServiceDetail
+export default ServicesDetail
