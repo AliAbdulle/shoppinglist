@@ -2,7 +2,7 @@ import React from "react"
 import Header from "./components/Header"
 import Home from "./Pages/Home"
 import ServicesList from "./Pages/services/ServicesList"
-import ServiceDetail from "./Pages/services/ServiceDetail"
+import ServicesDetail from "./Pages/services/ServiceDetail"
 
 import {Switch, Route} from "react-router-dom"
 
@@ -19,7 +19,7 @@ function App() {
                     <ServicesList />
                 </Route>
                 <Route path="/services" >
-                    <ServiceDetail />
+                    <ServicesDetail />
                 </Route>
             </Switch>
         </div>
